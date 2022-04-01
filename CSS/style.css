@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(to right, #5f2c82, #FF6B6B);
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+header,form {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: #fff;
+}
+.todo-text {
+    padding: 5px;
+    margin-right: 5px;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+}
+.button {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #5f2c82, #FF6B6B);
+    outline: none;
+    border: 0;
+    color: white;
+    border-radius: 50%;
+}
+.todo-list {
+    list-style: none;
+}
+.tododiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all .7s ease;
+}
+.toDoItem {
+    background-color: white;
+    width: 17em;
+    margin-right: 5px;
+    padding: 13px;
+    border-radius: 13px;
+    font-size: 26px;
+    font-style: italic;
+    font-family: cursive;
+    margin-right: 20px;
+    position: relative;
+    transition: all .8s ease;
+    
+}
+.completed{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 101%;
+    background: linear-gradient(to right, #5f2c82, #FF6B6B);
+    border-radius: 13px;
+    width: 17em;
+    opacity: .7;
+}
+.complete {
+    background: white;
+    border: 0;
+    outline: none;
+    margin-right: 10px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+}
+.complete:hover {
+    color: #1cc91c;
+}
+.del {
+    background: white;
+    border: 0;
+    outline: none;
+    margin-left: 5px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+}
+.del:hover {
+    color: red;
+}
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+.style {
+    background: linear-gradient(to right, #5f2c82, #FF6B6B);
+
+    border-radius: 13px;
+    opacity: .9;
+    text-decoration: line-through;
+    transition: all .6s ease;
+    z-index: 1;
+}
+.width {
+    width: 27.7em !important;
+}
